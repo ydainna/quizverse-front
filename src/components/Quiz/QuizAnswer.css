@@ -1,0 +1,38 @@
+@import "@assets/css/variables.css";
+
+.buttonNextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button style */
+.buttonNext {
+  background-color: var(--buttonNextBackgroundColor);
+  border: none;
+  color: var(--textButtonNextColor);
+  padding: var(--buttonNextPadding);
+  text-align: center;
+  font-size: var(--buttonNextTextSize);
+  margin: 5%;
+  cursor: pointer;
+  box-shadow: var(--buttonNextBoxShadow);
+  border-radius: var(--buttonNextBorderRadius);
+}
+
+/* Button hover style */
+.buttonNext:hover {
+  background-color: var(--buttonNextHoverBackgroundColor);
+}
+
+.buttonNext:active {
+  box-shadow: var(--buttonNextActiveBoxShadow);
+  transform: translateY(4px);
+}
+
+.answer {
+  font-size: var(--textAnswerSize);
+  font-weight: bold;
+  margin: 125% 93, 75%;
+}

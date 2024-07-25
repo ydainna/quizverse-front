@@ -1,0 +1,36 @@
+.selectlevel {
+  background-color: #000;
+  border-radius: 10px;
+  height: 6vh;
+  width: 50vh;
+}
+
+.level {
+  background-color: #fefefe;
+  border: none;
+  height: 5vh;
+  width: 25vh;
+  margin: 0;
+  padding: 0;
+  color: black;
+}
+
+.levelisActive {
+  background: #f72585;
+  border: none;
+  height: 6vh;
+  width: 25vh;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.level :active {
+  background-color: rgb(47, 198, 41);
+  color: #000000;
+}
+
+.tablescores {
+  margin-top: 5vh;
+}

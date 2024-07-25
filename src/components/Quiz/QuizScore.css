@@ -1,0 +1,70 @@
+@import "@assets/css/variables.css";
+
+.buttonScoreContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Button style */
+.buttonScore {
+  background-color: var(--buttonScoreBackgroundColor);
+  border: none;
+  color: var(--textButtonScoreColor);
+  padding: var(--buttonScorePadding);
+  text-align: center;
+  font-size: var(--buttonScoreTextSize);
+  margin: 5%;
+  cursor: pointer;
+  box-shadow: var(--buttonScoreBoxShadow);
+  border-radius: var(--buttonScoreBorderRadius);
+}
+
+/* Button hover style */
+.buttonScore:hover {
+  background-color: var(--buttonScoreHoverBackgroundColor);
+}
+
+.buttonScore:active {
+  box-shadow: var(--buttonScoreActiveBoxShadow);
+  transform: translateY(4px);
+}
+
+.buttonSubmit {
+  background-color: var(--buttonSubmitBackgroundColor);
+  border: none;
+  color: var(--textButtonSubmitColor);
+  padding: var(--buttonSubmitPadding);
+  text-align: center;
+  font-size: var(--buttonSubmitTextSiz);
+  margin: 5%;
+  cursor: pointer;
+  box-shadow: var(--buttonSubmitBoxShadow);
+  border-radius: var(--buttonSubmitBorderRadius);
+}
+
+.buttonSubmit:hover {
+  background-color: var(--buttonSubmitHoverBackgroundColor);
+}
+
+.buttonSubmit:active {
+  box-shadow: var(--buttonSubmitActiveBoxShadow);
+  transform: translateY(4px);
+}
+
+.score {
+  font-size: var(--textScoreSize);
+  font-weight: bold;
+  margin: 5%;
+}
+
+.inputName {
+  font-size: var(--inputTextSize);
+  font-weight: bold;
+  margin: 5% 0, 5%;
+  border: none;
+  border-bottom: 1px solid var(--textButtonQuizColor);
+  background-color: var(--inputNameBackgroundColor);
+  color: var(--inputNameTextColor);
+}

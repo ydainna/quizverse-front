@@ -1,0 +1,158 @@
+@import "@assets/css/variables.css";
+
+/* Page body */
+body {
+  background-color: var(--backgroundQuizColor);
+}
+
+/* Quiz section
+----------------------------------------------- */
+/* Section style */
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* QuizVerse logo */
+.logo {
+  margin: auto;
+  margin-top: 5%;
+  margin-left: 7rem;
+  margin-bottom: 1rem;
+  width: 70%;
+}
+
+/* Quiz container style */
+.quizContainer {
+  background-color: var(--backgroundContainerQuizColor);
+  width: 29rem;
+  height: 40rem;
+  padding: 2%;
+  margin: 1%;
+  box-sizing: border-box;
+  border: var(--backgroundBorderContainerQuiz);
+  box-shadow: var(--backgroundContainerQuizBoxShadow);
+  border-radius: var(--borderRadiusContainerQuiz);
+}
+
+/* Quiz container title (h1) text style */
+.quizContainer h1 {
+  color: var(--titleOneColor);
+  text-align: center;
+}
+
+/* Quiz container question (p) text style */
+.quizContainer p {
+  color: var(--paragraphQuizColor);
+  text-align: center;
+  font-size: var(--paragrapheQuizSize);
+  margin: 1rem;
+}
+
+/* Buttons
+=============================*/
+/* Button container */
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+/* Button style */
+.buttonDifficulty {
+  background-color: var(--buttonQuizBackgroundColor);
+  border: none;
+  color: var(--textButtonQuizColor);
+  padding: var(--buttonQuizPadding);
+  text-align: center;
+  font-size: var(--buttonQuizTextSize);
+  margin: 1rem;
+  cursor: pointer;
+  box-shadow: var(--buttonQuizBoxShadow);
+  border-radius: var(--buttonQuizBorderRadius);
+}
+
+/* Button hover style */
+.buttonDifficulty:hover {
+  background-color: var(--buttonQuizHoverBackgroundColor);
+}
+
+.buttonDifficulty:active {
+  box-shadow: var(--buttonQuizActiveBoxShadow);
+  transform: translateY(4px);
+}
+
+/* Lottie animation
+=============================*/
+/* Lottie animation background for quiz */
+.lottie-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  visibility: hidden;
+}
+
+@media screen and (min-width: 700px) {
+  /* QuizVerse logo */
+  .logo {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    width: auto;
+    height: auto;
+  }
+
+  .quizContainer {
+    width: 60rem;
+    height: 35rem;
+  }
+
+  /* Quiz container question (p) text style */
+  .quizContainer p {
+    color: var(--paragraphQuizColor);
+    text-align: center;
+    font-size: var(--paragrapheQuizSize);
+  }
+
+  /* Buttons
+  =============================*/
+  /* Button container */
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Button style */
+  .buttonDifficulty {
+    background-color: var(--buttonQuizBackgroundColor);
+    border: none;
+    color: var(--textButtonQuizColor);
+    padding: var(--buttonQuizPadding);
+    text-align: center;
+    font-size: var(--buttonQuizTextSize);
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: var(--buttonQuizBorderRadius);
+    text-align: center;
+  }
+
+  /* Lottie animation
+  =============================*/
+  /* Lottie animation background for quiz */
+  .lottie-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    visibility: visible;
+  }
+}

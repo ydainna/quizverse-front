@@ -1,0 +1,17 @@
+.LevelButton {
+  display: flex;
+  flex-direction: row;
+}
+
+.btn-game {
+  background-color: #cc1e6f;
+  border-radius: 10px;
+  border-color: #ffffff;
+  width: 38vh;
+  height: 82px;
+}
+
+button .text {
+  font-size: 3vh;
+  color: #fefefe;
+}

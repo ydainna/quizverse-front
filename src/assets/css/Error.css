@@ -1,0 +1,172 @@
+@import "@assets/css/variables.css";
+
+/* Page body */
+body {
+  background-color: var(--backgroundErrorColor);
+}
+
+/* Error section
+----------------------------------------------- */
+/* Section style */
+.error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+/* Error container style */
+.errorContainer {
+  background-color: var(--backgroundContainerErrorColor);
+  width: auto;
+  padding: 30px;
+  box-sizing: border-box;
+  border: var(--backgroundBorderContainerError);
+  box-shadow: var(--backgroundContainerErrorBoxShadow);
+  border-radius: var(--borderRadiusContainerError);
+  margin: 10%;
+}
+
+/* Error container title (h1) text style */
+.errorContainer h1 {
+  color: var(--titleOneColor);
+  text-align: center;
+}
+
+/* Error container (p) text style */
+.errorContainer p {
+  color: var(--paragraphErrorColor);
+  text-align: center;
+  font-size: var(--paragrapheErrorSize);
+}
+
+/* Error title text style */
+.errorTitle {
+  color: var(--titleErrorColor);
+  font-size: var(--titleErrorSize);
+  text-align: center;
+}
+
+/* Buttons
+=============================*/
+/* Button container */
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Button style */
+.button {
+  background-color: var(--buttonErrorBackgroundColor);
+  border: none;
+  color: var(--textButtonErrorColor);
+  padding: 16px 32px;
+  text-align: center;
+  font-size: var(--buttonErrorTextSize);
+  margin: 5% 30%;
+  cursor: pointer;
+  box-shadow: var(--buttonErrorBoxShadow);
+  border-radius: var(--buttonErrorBorderRadius);
+}
+
+/* Button hover style */
+.button:hover {
+  background-color: var(--buttonErrorHoverBackgroundColor);
+}
+
+.button:active {
+  box-shadow: var(--buttonErrorActiveBoxShadow);
+  transform: translateY(4px);
+}
+
+/* Lottie animation
+=============================*/
+/* Lottie animation background */
+.lottie-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--BackgroundLottieSizeErrorW);
+  height: var(--BackgroundLottieSizeErrorH);
+  z-index: -1;
+  visibility: visible;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-width: 700px) {
+  /* Error section
+  ----------------------------------------------- */
+  /* Section style */
+  .error {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+
+  /* Error container (p) text style */
+  .errorContainer p {
+    color: var(--paragraphErrorColor);
+    text-align: center;
+    font-size: var(--paragraphErrorColor);
+  }
+
+  /* Error title text style */
+  .errorTitle {
+    color: var(--titleErrorColor);
+    font-size: var(--titleErrorSize);
+    text-align: center;
+  }
+
+  /* Buttons
+  =============================*/
+  /* Button container */
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  /* Button style */
+  .button {
+    background-color: var(--buttonErrorBackgroundColor);
+    border: none;
+    color: var(--textButtonErrorColor);
+    padding: var(--buttonErrorPadding);
+    text-align: center;
+    font-size: var(--buttonErrorTextSize);
+    margin: 5%;
+    cursor: pointer;
+    box-shadow: var(--buttonErrorBoxShadow);
+    border-radius: var(--buttonErrorBorderRadius);
+  }
+
+  /* Lottie animation
+  =============================*/
+  /* Lottie animation background for quiz */
+  .lottie-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: var(--BackgroundLottieSizeErrorW);
+    height: var(--BackgroundLottieSizeErrorH);
+    z-index: 0;
+    visibility: visible;
+  }
+
+  .lottie-error {
+    display: flex;
+    margin: auto;
+  }
+}

@@ -1,0 +1,189 @@
+@import "@assets/css/variables.css";
+
+/* Buttons
+=============================*/
+/* Button container */
+.buttonAnswerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 100vw;
+}
+
+/* Button answer style */
+.answerButton {
+  word-wrap: break-word;
+  width: 100%;
+  min-height: 3.12rem;
+  border-radius: var(--buttonAnswerBorderRadius);
+  border: var(--buttonAnswerBorder);
+  background-color: var(--buttonAnswerBackgroundColor);
+  color: var(--buttonAnswertextColor);
+  font-size: var(--buttonAnswerTextSize);
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+.answerButtonSelected {
+  word-wrap: break-word;
+  width: 100%;
+  min-height: 3.12rem;
+  border-radius: var(--buttonAnswerBorderRadius);
+  border: var(--buttonAnswerBorder);
+  background-color: var(--buttonAnswerHoverBackgroundColor);
+  color: var(--buttonAnswerHoverTextColor);
+  font-size: var(--buttonAnswerTextSize);
+  font-weight: 600;
+  margin-bottom: 10px;
+  cursor: pointer;
+  list-style-type: none;
+}
+
+/* Button answer hover style */
+.answerButton:hover {
+  background-color: var(--buttonAnswerHoverBackgroundColor);
+  color: var(--buttonAnswerHoverTextColor);
+}
+
+.buttonResetContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Button reset style */
+.resetButton {
+  background-color: var(--buttonResetBackgroundColor);
+  border: none;
+  color: var(--textButtonResetColor);
+  padding: var(--buttonResetPadding);
+  text-align: center;
+  font-size: var(--buttonResetTextSize);
+  margin: 5%;
+  cursor: pointer;
+  box-shadow: var(--buttonResetBoxShadow);
+  border-radius: var(--buttonResetBorderRadius);
+}
+
+/* Button reset hover style */
+.resetButton:hover {
+  background-color: var(--buttonResetHoverBackgroundColor);
+}
+
+/* Button reset active style */
+.resetButton:active {
+  box-shadow: var(--buttonResetActiveBoxShadow);
+  transform: translateY(4px);
+}
+
+.buttonScoreContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+/* Button style */
+.buttonScore {
+  background-color: var(--buttonScoreBackgroundColor);
+  border: none;
+  color: var(--textButtonScoreColor);
+  padding: var(--buttonScorePadding);
+  text-align: center;
+  font-size: var(--buttonScoreTextSize);
+  margin-left: 1rem;
+  cursor: pointer;
+  box-shadow: var(--buttonScoreBoxShadow);
+  border-radius: var(--buttonScoreBorderRadius);
+}
+
+/* Button hover style */
+.buttonScore:hover {
+  background-color: var(--buttonScoreHoverBackgroundColor);
+}
+
+.buttonScore:active {
+  box-shadow: var(--buttonScoreActiveBoxShadow);
+  transform: translateY(4px);
+}
+
+.buttonSubmit {
+  background-color: var(--buttonSubmitBackgroundColor);
+  border: none;
+  color: var(--textButtonSubmitColor);
+  padding: var(--buttonSubmitPadding);
+  text-align: center;
+  font-size: var(--buttonSubmitTextSiz);
+  cursor: pointer;
+  box-shadow: var(--buttonSubmitBoxShadow);
+  border-radius: var(--buttonSubmitBorderRadius);
+}
+
+.buttonSubmit:hover {
+  background-color: var(--buttonSubmitHoverBackgroundColor);
+}
+
+.buttonSubmit:active {
+  box-shadow: var(--buttonSubmitActiveBoxShadow);
+  transform: translateY(4px);
+}
+
+.score {
+  font-size: var(--textScoreSize);
+  font-weight: bold;
+  margin: 5%;
+}
+
+.inputName {
+  font-size: var(--inputTextSize);
+  font-weight: bold;
+  height: 2rem;
+  border-radius: 0.25rem;
+  margin: 5% 0, 5%;
+  border: none;
+  border-bottom: 1px solid var(--textButtonQuizColor);
+  background-color: var(--inputNameBackgroundColor);
+  color: var(--inputNameTextColor);
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+
+@media screen and (min-width: 700px) {
+  /* Buttons
+  =============================*/
+  /* Button container style */
+  .buttonAnswerContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  /* Button answer style */
+  .answerButton {
+    width: 45%;
+  }
+
+  .answerButtonSelected {
+    width: 45%;
+  }
+}
+
+#answerText {
+  font-size: 0.9rem;
+}
+
+answerSubmit {
+  color: var(--buttonSubmitHoverBackgroundColor);
+  font-size: 0.9rem;
+}
+
+.inputClass {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
