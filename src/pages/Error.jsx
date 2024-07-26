@@ -2,7 +2,7 @@ import { useState } from "react";
 import Modal from "react-modal";
 import { Link } from "react-router-dom";
 import { Player } from "@lottiefiles/react-lottie-player";
-import Video from "../components/Layout-Components/Video";
+import Video from "../components/Layout-Components/Video/Video";
 
 import "@assets/css/Error.css";
 
